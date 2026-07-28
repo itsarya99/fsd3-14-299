@@ -1,0 +1,2 @@
+FS is easy in JS
+it can read and write files
