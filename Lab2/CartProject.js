@@ -96,7 +96,7 @@ const main = async () => {
         await removeProduct(Number(pid));
         break;
       case 4:
-       let piid = await cin.question("Enter product id to remove:");
+        let piid = await cin.question("Enter product id to update quantity:");
         await updateQuantity(Number(piid));
         break;
       case 5:
