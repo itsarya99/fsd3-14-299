@@ -1,12 +1,10 @@
 import http from "http";
 
-const server = http.createServer();
-server.on("request", (req, res) => {
+const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "text/html");
-  res.write("<h1>welcome to my server</h1>");
-  res.write("<h2>this is my first server</h2>");
-  res.end();
+  res.end("<h2 style ='color:red;'>Welcome to my first server</h2>");
 });
+
 server.listen(5000, () => {
   console.log("server is running ");
 });
