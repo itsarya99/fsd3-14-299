@@ -1,11 +1,11 @@
 {
-  "name": "lab3",
+  "name": "lab4",
   "version": "1.0.0",
-  "description": "hyper text transfer protocol\r  html-hyper text markup language\r  css= cascading style sheets",
-  "main": "app.js",
+  "description": "1. create project folder\r 2. right click on project folder and select open integrated terminal",
+  "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon prg11.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
