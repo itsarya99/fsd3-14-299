@@ -6,6 +6,7 @@ const app = express();
 
 const filename = fileURLToPath(import.meta.url);//reference of root folder
 const dirname = path.dirname(filename); // store the address of project folder
+
 app.use(express.static(path.join(dirname, "frontend")));
 
 app.use((req,res)=>{
