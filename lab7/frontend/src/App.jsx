@@ -6,15 +6,25 @@ const b1 = {
   quantity: 10,
   rating: 5.0,
 };
+const b2 = {
+  picUrl:
+    "https://m.media-amazon.com/images/I/61NcBc--h7L._AC_UL480_FMwebp_QL65_.jpg",
+  bname: "Learn React with TypeScript",
+  price: 3245,
+  quantity: 10,
+  rating: 4.4,
+};
 
-function Book() {
+function Book(props) {
+  console.log(props);
+
   return (
     <div>
-      <img src={b1.picUrl} alt={b1.bname} />
-      <h3>Rating:{b1.rating}</h3>
+      <img src={props.book.picUrl} alt={props.book.bname} />
+      <h3>Rating:{props.book.rating}</h3>
       <h1>Let us React </h1>
-      <h3> Price:{b1.price}</h3>
-      <h4> Quanity:{b1.quantity}</h4>
+      <h3> Price:{props.book.price}</h3>
+      <h4> Quanity:{props.book.quantity}</h4>
     </div>
   );
 }
@@ -22,11 +32,11 @@ function Book() {
 export default function App() {
   return (
     <>
-      <Book />
+      <Book book={b1} />
       <h1>Hello Arya </h1>
-      <Book />
-      <Book />
-      <Book />
+      <Book book ={b2} />
+      <Book book={b1}/>
+      <Book book ={b2}/>
     </>
   );
 }
