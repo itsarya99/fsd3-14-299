@@ -1,6 +1,6 @@
 const b1 = {
   picUrl:
-    "https://m.media-amazon.com/images/I/518+W2zr3BL._AC_UY327_FMwebp_QL65_.jpg",
+    "https://m.media-amazon.com/images/I/41Vv6hJcxNL._SY445_SX342_QL70_FMwebp_.jpg",
   bname: "The Road to React",
   price: 2886,
   quantity: 10,
@@ -8,7 +8,7 @@ const b1 = {
 };
 const b2 = {
   picUrl:
-    "https://m.media-amazon.com/images/I/61NcBc--h7L._AC_UL480_FMwebp_QL65_.jpg",
+    "https://m.media-amazon.com/images/I/41JqamfsnJL._SX342_SY445_FMwebp_.jpg",
   bname: "Learn React with TypeScript",
   price: 3245,
   quantity: 10,
@@ -16,15 +16,16 @@ const b2 = {
 };
 
 function Book(props) {
-  console.log(props);
+  const { bname, price, quantity, rating, picUrl } = props.book;
 
   return (
-    <div>
-      <img src={props.book.picUrl} alt={props.book.bname} />
-      <h3>Rating:{props.book.rating}</h3>
+    <div className="book">
+      <img src={picUrl} alt={bname} />
+      <h3>Rating:{rating}</h3>
       <h1>Let us React </h1>
-      <h3> Price:{props.book.price}</h3>
-      <h4> Quanity:{props.book.quantity}</h4>
+      <h3> Price:{price}</h3>
+      <h4> Quanity:{quantity}</h4>
+      <button>Buy Now</button>
     </div>
   );
 }
@@ -32,11 +33,13 @@ function Book(props) {
 export default function App() {
   return (
     <>
-      <Book book={b1} />
-      <h1>Hello Arya </h1>
-      <Book book ={b2} />
-      <Book book={b1}/>
-      <Book book ={b2}/>
+      <h1>Online Book Store </h1>
+      <div className="container">
+        <Book book={b1} />
+        <Book book={b2} />
+        <Book book={b1} />
+        <Book book={b2} />
+      </div>
     </>
   );
 }
