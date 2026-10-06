@@ -1,19 +1,27 @@
-# React + Vite
+# Frontend - Backend
+1. create Project Folder(lab7)
+2. Create frontend , backend folder within
+3. open terminal and split into two
+4. open frontend in left side terminal 
+5. open backend in right side terminal
+6. in backend 
+a. initialize backend by `npm init -y`
+b. instal nodemon by `npm i nodemon`
+c. open package.json from backend update `type to module` and script 
+d. create app.js 
+7. in frontend
+a. npm create vite@latest
+b. enter . as project name
+c. select framework as react from arrow key
+d. select variant as javascript from arrow key
+e. select eslint for linking from arrow key
+f. select install and start the frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## COMPONENTS
+1. simple js function returns html directory
+2. it must with capital letter
+3. ut should be treated as html tag 
+4. it must be  closed 
 
 ## object deStructure
 * example line 20 in app.jsx
@@ -37,8 +45,6 @@ any component include styles
 then apply that style attribute and pass the object
 
 3. inline css= in this method we use two curly brackets with style attributes all the css property must be single word
-for example text align becomes textAlign 
+for example text align becomes textAlign
 
-
-
-
+# there should be minimum code in app.jsx
