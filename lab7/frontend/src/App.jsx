@@ -1,10 +1,8 @@
 import Book from "./components/Book";
 import Pen from "./components/pen";
-import { books } from "./data/books";
-import { pens } from "./data/pens";
-import fruit from "./components/fruit";
-
-
+import { books } from "./data/books.js";
+import { pens } from "./data/pens.js";
+import Fruit from "./components/fruit.jsx";
 export default function App() {
   return (
     <>
@@ -16,8 +14,9 @@ export default function App() {
         <Book book={books[1]} />
         <Pen pen={pens[0]} />
         <Pen pen={pens[1]} />
-          
       </div>
+      <Fruit />
+      <Event />
     </>
   );
 }

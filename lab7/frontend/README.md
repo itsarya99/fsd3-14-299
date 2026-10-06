@@ -48,3 +48,5 @@ then apply that style attribute and pass the object
 for example text align becomes textAlign
 
 # there should be minimum code in app.jsx
+
+# by default in html is submit button

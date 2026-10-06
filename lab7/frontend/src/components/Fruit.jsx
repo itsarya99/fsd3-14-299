@@ -12,8 +12,8 @@ const ListItem = products.map((item) => (
 ));
 console.log(ListItem);
 
-const fruit = () => {
+const Fruit = () => {
   return <div>fruit</div>;
 };
 
-export default fruit;
+export default Fruit;
