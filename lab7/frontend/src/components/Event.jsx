@@ -1,19 +1,20 @@
-import React from "react";
+
 
 const MyButton = () => {
-    const handleClick = () => {}
+    const handleClick = () => {
     alert("You clicked me!");
-  return 
-    <button
-      style={{ hieght: "50px", width: "100px" }}
-      onClick={handleClick}    >
-      Click Me
-    </button>;
+    }
+  return( 
+    <button class = "bg-black text-white rounded p-3 m-3" onClick={handleClick}>
+      Click me!
+    </button>
+  )
   
 };
 
 const Event = () => {
-  return <div>MyButton</div>;
+  return <div><MyButton/>
+  </div>
 };
 
 export default Event;
